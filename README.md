@@ -1,5 +1,3 @@
-> I'm currently trying to publish it on jsDelivr, so stay tuned!
-
 <h1>FreeGPT.js</h1>
 🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits! No
 
@@ -32,7 +30,9 @@ freegpt is a powerful javascript library you can use to get ChatGPT on your webs
 
 </div>
 
-> **Note** _To always import the latest version (NOT recommended in production!) replace the versioned jsDelivr URL with: `https://cdn.jsdelivr.net/npm/@ashishagarwal2023/freegptjs`_
+Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs@1.0.1/src/freegpt.min.js` as a script in your `<head>` and call it after its loaded.
+
+> Remove .min from the src to recieve a pure version, which is not optimizer for production.
 
 ## 💻 Usage
 
