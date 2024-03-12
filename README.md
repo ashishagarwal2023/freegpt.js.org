@@ -36,7 +36,7 @@ Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js
 <script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js"></script>
 ```
 
-> Remove .min from the src to recieve a pure version, which is not optimizer for production.
+> Remove .min from the src to recieve a pure version, which is not optimized for production.
 
 ## 💻 Usage
 
