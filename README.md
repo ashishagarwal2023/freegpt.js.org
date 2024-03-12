@@ -30,10 +30,10 @@ freegpt is a powerful javascript library you can use to get ChatGPT on your webs
 
 </div>
 
-Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs@1.0.1/src/freegpt.min.js` as a script in your `<head>` and call it after its loaded.
+Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js` as a script in your `<head>` and call it after its loaded.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs@1.0.1/src/freegpt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js"></script>
 ```
 
 > Remove .min from the src to recieve a pure version, which is not optimizer for production.
