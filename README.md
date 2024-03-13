@@ -1,5 +1,8 @@
 <h1>FreeGPT.js</h1>
-🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits! No
+🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
+<br>
+
+> Give it a try! Go [here](https://ashishagarwal.is-a.dev) to test the FreeGPT.js out! It's free!
 
 <br><div align="center">
 
@@ -57,7 +60,7 @@ You got it, I also got it. The route where I recieve the fetch in the library is
 
 > **Why we just care about the AJAX?** Listen, you can simply do your client's fetch requests using AJAX when the user comes to chat, and its simple when using pure HTML-JavaScript, so give it a try!
 
-> Generative Mode is **enabled**. This means GPT will not remember anything you tell it.
+> Generative Mode is **enabled**. This means GPT will not remember anything you tell it. I'm working to implement a conversative mode.
 
 ### Why I just made it?
 
