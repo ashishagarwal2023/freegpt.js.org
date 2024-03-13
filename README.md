@@ -2,7 +2,7 @@
 🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
 <br>
 
-> Give it a try! Go [here](https://ashishagarwal.is-a.dev) to test the FreeGPT.js out! It's free!
+> Give it a try! Go [here](https://ashishagarwal.is-a.dev/freegptjs) to test the FreeGPT.js out! It's free!
 
 <br><div align="center">
 
