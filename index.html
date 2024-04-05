@@ -1,25 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FreeGPT.js Web Example</title>
-  </head>
-  <body>
-    <script src="src/freegpt.js"></script>
-    <script>
-      (async () => {
-        let confirmed = false;
-        while (!confirmed) {
-          const result = await gpt.ask(prompt("Ask a question with GPT: "));
-          confirmed = confirm(
-            "Click OK to open the GitHub page now. Cancel to re-ask.\n\n" +
-              result
-          );
-        }
-        window.open("https://github.com/ashishagarwal2023/freegptjs", "_blank");
-      })();
-    </script>
-    Reload page to re-ask if you closed or missed prompt.
-  </body>
+<!doctype html>
+<html lang="en" style="scroll-behavior: smooth">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>FreeGPT.js Documentation</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link href="assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet">
+	<link href="assets/css/bootstrap-theme.min.css?ver=3.4.1" rel="stylesheet">
+	<link href="assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css?ver=4.7.0" rel="stylesheet">
+	<link href="assets/css/prism.css?ver=1.29.0" rel="stylesheet">
+	<link href="assets/css/documentation.css?ver=1.0.0" rel="stylesheet">
+
+	<script src="assets/js/html5shiv.min.js?ver=3.7.3"></script>
+	<script src="assets/js/respond.min.js?ver=1.4.2"></script>
+</head>
+
+<body>
+<section id="docs-heading-section">
+	<div class="container">
+		<div class="docs-heading-container">
+			<h1>FreeGPT.js Documentation</h1>
+			<p>FreeGPT is a javascript library for unlimited ChatGPT usage for free!</p>
+			<ul class="list-unstyled">
+				<li>GitHub: <a href="https://github.com/ashishagarwal2023/freegptjs" title="@ashishagarwal2023/freegptjs"><strong>@ashishagarwal2023/freegptjs</strong></a></li>
+				<li>Contact: <a href="mailto:code.with.aasheesh@gmail.com" title="Contact"><strong>code.with.aasheesh@gmail.com</strong></a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section id="docs-content-section">
+	<div class="container">
+		<div class="docs-content-container">
+			<div class="row">
+				<div class="col-md-3" role="complementary">
+					<nav id="sidebar-scrollspy-nav" class="hidden-sm hidden-xs">
+						<ul id="sidebar-nav" class="list-unstyled nav sidebar-navigation">
+							<li><a href="#get-started">Get Started</a></li>
+							<li><a href="#usage">Usage</a></li>
+
+							<li class="nav-item-back-to-top"><a href="#docs-heading-section">Back to top</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="col-md-9" role="main">
+					<div class="content">
+
+						<!-- Get Started -->
+						<div class="content-section">
+							<h1 id="get-started" class="content-section-heading">Get Started</h1>
+
+							<h3 class="mb-5">1. Create a index.html</h3>
+							<p class="mb-5">Create a new directory for your project and navigate to that directory. Initialize a new HTML file, like a index.html</p>
+							<pre class="mb-5">touch index.html</pre>
+							
+							<h3 class="mb-5">2. Load CDN</h3>
+							<p class="mb-5">Load the <strong>freegptjs</strong> library from jsDelivr:</p>
+							<pre class="mb-30">&lt;script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs@1.0.2/src/freegpt.min.js"&gt;&lt;/script&gt;</pre>
+							<p class="mb-5">Prefer to load the library from head and use in body.</p>
+
+							<h5>Example Code for index.html:</h5>
+							<pre class="mb-30">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;!-- Load from jsDelivr --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs@1.0.2/src/freegpt.min.js"&gt;&lt;/script&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;My demo page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+								</pre>
+						</div>
+
+						<!-- Usage -->
+						<div class="content-section">
+							<h1 id="usage" class="content-section-heading">Usage</h1>
+
+							<h3 class="mb-5">How to use?</h3>
+							<p class="mb-5">Use the await with gpt.ask(query)</p>
+							<pre class="mb-30">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;!-- Load from jsDelivr --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs@1.0.2/src/freegpt.min.js"&gt;&lt;/script&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;My demo page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+const response = await gpt.ask("Hello there, chatgpt!"); // bot will respond in few secs
+alert(response);
+&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;
+															</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="">
+	<div class="container">
+		<div class="docs-footer-container">
+			<p><i class="fa-copyright fa"></i> ashishagarwal20232024</p>
+		</div>
+	</div>
+</footer>
+
+<script src="assets/js/jquery.min.js?ver=1.12.4"></script>
+<script src="assets/js/bootstrap.min.js?ver=3.4.1"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+<script src="assets/js/prism.js?ver=1.29.0"></script>
+<script src="assets/js/documentation.js?ver=1.0.0"></script>
+</body>
 </html>
