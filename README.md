@@ -1,4 +1,4 @@
- <h1>FreeGPT.js</h1>
+ <h1>FreeGPT.js</h1> 
 🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
 <br>
 
