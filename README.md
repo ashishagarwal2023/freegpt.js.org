@@ -1,6 +1,10 @@
  <h1>FreeGPT.js</h1> 
+ 
  **This might be your best library you've seen, while searching for stable, working GPT libraries!**
+ 
 🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
+
+> If you are looking for a template or example, go ahead and look the branch **react**. It uses Next.js with FreeGPT.js to make a simple, but working, great and free unlimited chat application.
 <br>
 
 > Give it a try! Go [here](https://freegpt.js.org) to test the FreeGPT.js out! It's free!
