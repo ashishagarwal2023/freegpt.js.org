@@ -1,8 +1,9 @@
  <h1>FreeGPT.js</h1> 
+ **This might be your best library you've seen, while searching for stable, working GPT libraries!**
 🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
 <br>
 
-> Give it a try! Go [here](https://ashishagarwal.is-a.dev/freegptjs) to test the FreeGPT.js out! It's free!
+> Give it a try! Go [here](https://freegpt.js.org) to test the FreeGPT.js out! It's free!
 
 <br><div align="center">
 
@@ -29,7 +30,7 @@ freegpt is a powerful javascript library you can use to get ChatGPT on your webs
 
 <div id="importing">
 
-## ⚡ Importing the library
+## ⚡ Adding the library
 
 </div>
 
@@ -39,7 +40,10 @@ Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js
 <script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js"></script>
 ```
 
-> Remove .min from the src to recieve a pure version, which is not optimized for production.
+> Integrating with Next.js or any such framework is also possible. Check out the **react** branch for a sample chat application.
+> Load the freegpt lib the same way in your <head> in your layout of Next/React project, then use `await gpt.ask` to see if it works.
+
+> The library will only work on client-side.
 
 ## 💻 Usage
 
@@ -50,23 +54,21 @@ Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js
 })();
 ```
 
-There's literally nothing more coded. It's a reverse engineering of You.com API (which is completely free, I was shocked to see)
+And that is all.
 
 ## 🤖 Why client-side?
 
-You got it, I also got it. The route where I recieve the fetch in the library is protected by Cloudflare. Got it?
+The route from where the responses are taken are protected with Cloudflare. If you wish, you can recommend me a good working free Cloudflare scraper so you can even use this on servers, however everyone would need scraper so.
 
-> When I tried to get the response using NodeJS, it appeared that it gave HTML, and oh, there was Cloudflare security. I tried several web scrapers for NodeJS (and even tried python) but there was one paid, that I cannot afford and so this AJAX request still worked.
+> Please do not make issues regarding not working with Nodejs like #1
 
-> **Why we just care about the AJAX?** Listen, you can simply do your client's fetch requests using AJAX when the user comes to chat, and its simple when using pure HTML-JavaScript, so give it a try!
-
-> Generative Mode is **enabled**. This means GPT will not remember anything you tell it. I'm working to implement a conversative mode.
+By the way, GPT will not remember anything as generative mode is. I might look to make conversations soon!
 
 ### Why I just made it?
 
-There was a chatgptpy library for Python and several for NodeJS also. But I wanted to build a completely free one, so I made this.
+Building AI applications isn't free, but I wanted to do it. This does not cost me a penny, feel free to use!
 
-Give it a star if you want to help me keep it active. Follow me when?
+Give it a star if you want to help me keep it active.
 
 It depends on **You.com**'s API, however its reverse engineered, but it has no tokens/login or such.
 
