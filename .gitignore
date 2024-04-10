@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .yarn
-yarn.lock
 .pnp.cjs
 .pnp.js
 .yarn/install-state.gz
