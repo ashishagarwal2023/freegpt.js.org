@@ -1,3 +1,5 @@
+> This branch is a example of a working, unlimited react next.js application that is based on freegpt.js.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
