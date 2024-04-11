@@ -54,13 +54,15 @@
    * @param {number} [page=1] - Optional. The page number for pagination (default is 1).
    * @returns {Promise<string|null>} A promise that resolves with the extracted information or null if an error occurs.
    */
-  const ask = async (query, page = 1) => {
+  const ask = async (query, page=1, count=(Math.floor(Math.random() * (10000 - 100 + 1)) + 100)) => {
     const url =
       "https://you.com/api/streamingSearch?q=" +
       encodeURIComponent(query) +
       "&page=" +
       page +
-      "&count=10&domain=youchat";
+      "&count=" +
+      count +
+      "&domain=youchat";
     if (query.trim() === "") {
       console.error("Cannot parse a blank query.");
       return null;
@@ -77,6 +79,6 @@
 })();
 /*
  * Example usage
- * console.log(await gpt.ask("Hello there!", 2))
- * You can skip the second page paramter its by default as 1. Its literally useless if you want to only ask the question once.
+ * console.log(await gpt.ask("Hello there!"))
+ * Second and third parameters are not needed.
  */
