@@ -42,10 +42,10 @@ You built something **cool**? Make a issue or PR!
 
 </div>
 
-Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js` as a script in your `<head>` and call it after its loaded.
+Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegpt.js.org@master/src/freegpt.js` as a script in your `<head>` and call it after its loaded.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegpt.js.org@master/src/freegpt.js"></script>
 ```
 
 > Load the freegpt lib the same way in your <head> in your layout of Next/React project, then use `await gpt.ask` to see if it works. If `gpt.ask` is not defined (probably when using with Nodejs), try `window.gpt.ask`. The library will only work on client-side.
