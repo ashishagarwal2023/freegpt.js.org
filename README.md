@@ -1,27 +1,17 @@
- <h1>FreeGPT.js</h1> 
- 
- **This might be your best library you've seen, while searching for stable, working GPT libraries!**
- 
-🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
-
-> [!NOTE]
-> If you are looking for a template or example, go ahead and look the branch **react**. It uses Next.js with FreeGPT.js to make a simple, but working, great and free unlimited chat application.
-
-> [!TIP]
-> Also checkout my ChatGPT Clone (UI and implementation): https://ashishagarwal.is-a.dev/chatgpt-clone/ - it works with FreeGPT.js!
-
 > [!WARNING]
 > FreeGPT.js/this project is not affiliated with ChatGPT in any kind. I'm not responsible for anything and this project is just for educational purposes.
 
+ <h1>FreeGPT.js</h1> 
+ 
+ **🤖 A great, stable but free ChatGPT library with no authentication at all!**
+
+> [!TIP]
+> If you are looking for a template or example, go ahead and look the branch **react**. It uses Next.js with FreeGPT.js to make a simple, but working, great and free unlimited chat application.
+> Or you can checkout my ChatGPT UI Clone + Implementation: [ChatGPT Clone with Next.js and FreeGPT.js][https://ashishagarwal.is-a.dev/chatgpt-clone/]
+
 > Give it a try! Go [here](https://ashishagarwal.is-a.dev/chatgpt-clone) to test the FreeGPT.js out! It's free!
 
-<br><div align="center">
-
 [![](https://img.shields.io/github/stars/ashishagarwal2023/freegptjs?label=Stars&color=af68ff&logo=github&logoColor=white&labelColor=464646&style=for-the-badge)](https://github.com/ashishagarwal2023/freegptjs/stargazers) [![](https://img.shields.io/badge/License-MIT-green.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge)](https://github.com/ashishagarwal2023/freegptjs/blob/main/LICENSE.md) [![](https://img.shields.io/github/commit-activity/m/ashishagarwal2023/freegptjs?label=Commits&logo=github&logoColor=white&labelColor=464646&style=for-the-badge)](https://github.com/ashishagarwal2023/freegptjs/commits/main)
-
-</div>
-
-</div>
 
 <div id="intro">
 
@@ -41,7 +31,8 @@ freegpt is a powerful javascript library you can use to get ChatGPT on your webs
 <div id="importing">
 
 ## Examples
-Not much yet, atleast someone should make something. ;-;
+Just one yet, but this list can be filled.
+
 [ChatGPT Clone with Next.js and FreeGPT.js](https://ashishagarwal.is-a.dev/chatgpt-clone/)
 ![ChatGPT Clone with Next.js and FreeGPT.js](freegpt.png)
 
@@ -57,10 +48,7 @@ Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js
 <script src="https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js"></script>
 ```
 
-> Integrating with Next.js or any such framework is also possible. Check out the **react** branch for a sample chat application.
-> Load the freegpt lib the same way in your <head> in your layout of Next/React project, then use `await gpt.ask` to see if it works.
-
-> The library will only work on client-side.
+> Load the freegpt lib the same way in your <head> in your layout of Next/React project, then use `await gpt.ask` to see if it works. If `gpt.ask` is not defined (probably when using with Nodejs), try `window.gpt.ask`. The library will only work on client-side.
 
 ## 💻 Usage
 
