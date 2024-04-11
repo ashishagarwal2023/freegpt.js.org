@@ -4,10 +4,16 @@
  
 🤖 A powerful client-side JavaScript library for ChatGPT allowing you to use ChatGPT without any limits!
 
+> [!NOTE]
 > If you are looking for a template or example, go ahead and look the branch **react**. It uses Next.js with FreeGPT.js to make a simple, but working, great and free unlimited chat application.
-<br>
 
-> Give it a try! Go [here](https://freegpt.js.org) to test the FreeGPT.js out! It's free!
+> [!TIP]
+> Also checkout my ChatGPT Clone (UI and implementation): https://ashishagarwal.is-a.dev/chatgpt-clone/ - it works with FreeGPT.js!
+
+> [!WARNING]
+> FreeGPT.js/this project is not affiliated with ChatGPT in any kind. I'm not responsible for anything and this project is just for educational purposes.
+
+> Give it a try! Go [here](https://ashishagarwal.is-a.dev/chatgpt-clone) to test the FreeGPT.js out! It's free!
 
 <br><div align="center">
 
@@ -33,6 +39,13 @@ freegpt is a powerful javascript library you can use to get ChatGPT on your webs
 - Unlimited GPT 3.5 Model
 
 <div id="importing">
+
+## Examples
+Not much yet, atleast someone should make something. ;-;
+[ChatGPT Clone with Next.js and FreeGPT.js](https://ashishagarwal.is-a.dev/chatgpt-clone/)
+![ChatGPT Clone with Next.js and FreeGPT.js](freegpt.png)
+
+You built something **cool**? Make a issue or PR!
 
 ## ⚡ Adding the library
 
@@ -60,13 +73,17 @@ Load `https://cdn.jsdelivr.net/gh/ashishagarwal2023/freegptjs/src/freegpt.min.js
 
 And that is all.
 
+> [!IMPORTANT]
+> If you are receiving error even when library is loaded (probably with React, and might also with Vue, Angular, etc), then use `window.gpt.ask` instead of `gpt.ask`.
+> And next thing, the `window.gpt.ask` is only available on client-side components, as you may know.
+
 ## 🤖 Why client-side?
 
-The route from where the responses are taken are protected with Cloudflare. If you wish, you can recommend me a good working free Cloudflare scraper so you can even use this on servers, however everyone would need scraper so.
+This is a reverse-engineer of a ChatGPT AI service, [You.com](https://you.com).
+
+They, for their own security, added Cloudflare Protection to the API. This can only be bypassed on JavaScript client-side.
 
 > Please do not make issues regarding not working with Nodejs like #1
-
-By the way, GPT will not remember anything as generative mode is. I might look to make conversations soon!
 
 ### Why I just made it?
 
@@ -74,12 +91,12 @@ Building AI applications isn't free, but I wanted to do it. This does not cost m
 
 Give it a star if you want to help me keep it active.
 
-It depends on **You.com**'s API, however its reverse engineered, but it has no tokens/login or such.
+It depends on **You.com**'s API, however its reverse engineered. Please note that I'm not responsible for anything and this is just for educational purpose.s
 
 ## 🤝Contributing
 
 You are welcome! I'm looking for some cool peoples to help me push this project further!
 
-> The API routes are given in plan.js, so read it if you would like to know how the API would work
+> I'm currently in-active on this project but you could, if you wish, try to implement conversations! :D
 
-If you made a working webscraper and would like me to use it (Cloudflare Bypass), you are welcome, but remember I cannot afford a bit, sorry.
+PRs are welcome, good issues too!
