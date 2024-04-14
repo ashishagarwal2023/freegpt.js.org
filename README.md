@@ -1,7 +1,7 @@
 > [!WARNING]
 > FreeGPT.js/this project is not affiliated with ChatGPT in any kind. I'm not responsible for anything and this project is just for educational purposes.
 
- <h1>FreeGPT.js</h1> 
+ <h1>FreeGPT.js</h1>
  
  **🤖 A great, stable but free ChatGPT library with no authentication at all!**
 
