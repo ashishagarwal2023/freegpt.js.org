@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeGPT.js Web Example</title>
+  </head>
+  <body>
+    <script src="src/freegpt.js"></script>
+    <script>
+      (async () => {
+        let confirmed = false;
+        while (!confirmed) {
+          const result = await gpt.ask(prompt("Ask a question with GPT: "));
+          confirmed = confirm(
+            "Click OK to open the GitHub page now. Cancel to re-ask.\n\n" +
+              result
+          );
+        }
+        window.open("https://github.com/ashishagarwal2023/freegptjs", "_blank");
+      })();
+    </script>
+    Reload page to re-ask if you closed or missed prompt.
+  </body>
+</html>
