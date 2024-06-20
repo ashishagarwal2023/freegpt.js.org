@@ -65,6 +65,9 @@ And that is all.
 > If you are receiving error even when library is loaded (probably with React, and might also with Vue, Angular, etc), then use `window.gpt.ask` instead of `gpt.ask`.
 > And next thing, the `window.gpt.ask` is only available on client-side components, as you may know.
 
+## Similiar
+For php, you might try [anil-turk/FreeGPT-NodeJS-PHP](https://github.com/anil-turk/FreeGPT-NodeJS-PHP).
+
 ## 🤖 Why client-side?
 
 This is a reverse-engineer of a ChatGPT AI service, [You.com](https://you.com).
